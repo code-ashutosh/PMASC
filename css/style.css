@@ -1,0 +1,61 @@
+
+
+.parallax-container{
+    height:100vh;
+}
+.hero{
+    height:100vh;
+    background-image: url("/images/hero2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+nav a:hover{
+ color:rgba(235, 35, 35, 0.781);
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:99999999;
+}
+.nav-links{
+    font-size:1.2em !important;
+}
+
+.container1{
+    position: absolute;
+    top:20vh;
+    left:5%;
+   width:95%;
+}
+.over-hero-img{
+    height:80%;
+}
+
+.input-field label{
+    color: rgb(255, 255, 255);
+  }
+input {
+    color: rgb(255, 255, 255);  
+}  
+
+footer{
+    min-height: 20vh;;
+}
+.social_media{
+    text-align: center;
+    color:white;
+}
+.social_media span{
+   
+    margin:10px;
+}
+.section-follow .fa-4x{
+margin:5px 10px;
+}
+footer i:hover{
+    color:rgba(22, 110, 211, 0.822)
+}
