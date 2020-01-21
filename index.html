@@ -11,49 +11,67 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Print Media and SubCouncil</title>
+    <title>Print & Social Media SubCouncil</title>
     <script src="https://use.fontawesome.com/47c88f3223.js"></script>
    
   </head>
 
   <body>
 
-
         <div class="hero">
         
             <nav class="transparent z-depth-0 " id="navbar">
                 <div class="nav-wrapper">
                   <!-- <a href="#!" class="brand-logo right">Logo</a> -->
-                  <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                  <a href="#" data-target="mobile-nav" class="sidenav-trigger" id="sidenav">
                       <i class="material-icons">menu</i>
                     </a>
-                  <ul class="left hide-on-med-and-down">
+                  <ul class="left hide-on-med-and-down" id="nav-links">
                     <li ><a href="home.html" class="nav-links">Home</a></li>
                     <li><a href="pulse.html" class="nav-links">Pulse Of HBTU</a></li>
                     <li><a href="team.html" class="nav-links">Team</a></li>
                     <!--  <li><a href="mobile.html">Mobile</a></li> --> 
                   </ul>
-                  <ul class="right hide-on-med-and-down">
-                      <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                  <ul class="right hide-on-med-and-down " id="nav-links">
+                      <li><a href="https://www.facebook.com/Print-and-Social-Media-Sub-Council-HBTU-111439640362136"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
                       <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
                       <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
                   </ul>       
                 </div>
               </nav>
-            </div>  
+           
               <ul class="sidenav" id="mobile-nav">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="pulse.html">Pulse Of HBTU</a></li>
-                <li><a href="team.html">Team</a></li>
+               <ul> 
+                 <li>
+                  
+                    <img src="/images/sidenav.jpg" width="100%" height="auto" >
+                  
+                 
+                  </li>
+                </ul>
+                <li><a class="waves-effect" href="home.html">Home</a></li>
+                <li>
+                  <div class="divider"></div>
+                </li>
+                <li><a class="waves-effect" href="pulse.html">Pulse Of HBTU</a></li>
+                <li>
+                  <div class="divider"></div>
+                </li>
+                <li><a class="waves-effect" href="team.html">Team</a></li>
+                <li>
+                  <div class="divider"></div>
+                </li>
+                
               </ul>
+              <div class="container box"></div>
               <div class="container container1">
                   <div class="row">
                       <div class="col s12 m6 over-hero">
                           <img class="responsive-img over-hero-img" src="/images/over-hero.jpg" alt="image">
 
                       </div>
-                      <div class="col s12 m4 right">
-                          <form action="/" method="post">
+                      <div class="col s12 m4">
+                          <form action="/" method="post" class="form" id="myForm">
                             <div class="input-field">
                              <input type="text"  id="name" name="name">
                              <label for="name">Name</label>
@@ -69,20 +87,90 @@
                                 <label for="Phone">Phone</label>
                            </div>
 
-                           <div class="input-field ">
-                                    <select>
-                                        <option value="1">Student</option>
-                                        <option value="2">Alumni</option>
+                           <div class="input-field">
+                                    <select id="selector-category">
+                                      <option value="Alumni">Alumni</option>
+                                      <option value="Student">Student</option>
                                       </select>
                              </div>
-                             
+                             <div id="invisible" class="invisible">
+                             <div class="input-field" >
+                              <select id="selector-branch">
+                                  <option value="CSE">Computer Science </option>
+                                  <option value="IT">Information Technology</option>
+                                  <option value="EE">Electronics</option>
+                                  <option value="EL">Electrical</option>
+                                  <option value="ME">Mechnical</option>
+                                  <option value="CVL">Civil</option>
+                                  <option value="FT">Food Technology</option>
+                                  <option value="BT">Bio Technology</option>
+                                  <option value="CHEM">Chemical Technology</option>
+                                  <option value="PT">Paint Technology</option>
+                                  <option value="PL">Plastic Technology</option>
+                                  <option value="OT">Oil Technology</option>
+                                </select>
+                              </div>
+                              <div class="input-field">
+                                <select id="selector-year">
+                                  <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                  </select>
+                              </div>
+                            </div>
                          </form>
                       </div>
                   </div>
               
-             
+            </div>
             </div>
         
+  <!-- Section: Popular Places -->
+  <section id="popular" class="section section-popular  scrollspy">
+   
+      
+    
+    <div class="container section">
+      <div class="row">
+        <h4 class="center">
+          <span class="teal-text">Popular</span> Places</h4>
+        <div class="col s12 m4">
+          <div class="card" >
+            <div class="card-image">
+              <img src="/images/resort1.jpg" alt="">
+              <span class="card-title">Cancun, Mexico</span>
+            </div>
+            <div class="card-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/resort2.jpg" alt="">
+              <span class="card-title">The Bahamas</span>
+            </div>
+            <div class="card-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/resort3.jpg" alt="">
+              <span class="card-title">Nova Scotia</span>
+            </div>
+            <div class="card-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ea deserunt officia, dicta sint perferendis.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>  
   <!-- Section: Slider -->
   <section class="slider">
     <ul class="slides">
@@ -124,16 +212,16 @@
             <div class="container">
               <div class="row">
                 <div class="col s12">
-                  <h4>Follow Print Media and Subcouncil</h4>
+                  <h4> Print & Social Media Subcouncil</h4>
                   <p>Follow us on social media for trending pulses</p>
-                  <a href="#" class="white-text">
-                    <i class="fa fa-facebook fa-4x"></i>
+                  <a href="https://www.facebook.com/Print-and-Social-Media-Sub-Council-HBTU-111439640362136" class="white-text">
+                    <i class="fa fa-facebook fa-2x"></i>
                   </a>
                   <a href="#" class="white-text">
-                    <i class="fa fa-twitter fa-4x"></i>
+                    <i class="fa fa-twitter fa-2x"></i>
                   </a>
                   <a href="#" class="white-text">
-                    <i class="fa fa-instagram fa-4x"></i>
+                    <i class="fa fa-instagram fa-2x"></i>
                   </a>
                 
                 </div>
@@ -164,13 +252,31 @@
             interval: 6000
               });
 
-
-
-
             var elems = document.querySelectorAll('select');
             var options =document.querySelectorAll('option');
             var instances = M.FormSelect.init(elems, options);
-
+            var a = document.getElementById('selector-category');
+              a.addEventListener('change', function() {
+              // alert(this.value);
+              if(this.value==="Student")
+              {
+                 let div = document.getElementById("invisible");
+                 
+                   div.classList.remove("invisible");
+                //  let form =document.getElementById("myForm");
+                  // form.style.margin ="10% 15%";
+                 
+              }
+              if(this.value ==="Alumni"){
+                let div = document.getElementById("invisible");
+                 
+                   div.classList.add("invisible");
+              }
+              }, false);
+          
+            // var elems_parallax = document.querySelectorAll('.parallax');
+            // var instances_parallax = M.Parallax.init(elems,0);
+  
 
             window.onscroll = function() {myFunction()};
 
@@ -185,14 +291,14 @@ if (window.pageYOffset >= sticky) {
   } else {
     navbar.classList.remove("sticky", "grey", "darken-4");
     // navbar.classList.remove("grey");
-    navbar.classList.add("transparent")
+    navbar.classList.add("transparent");
 
 }
 }
 
 
           });
-          
+        
         
         </script>
   </body>

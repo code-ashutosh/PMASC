@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Local Stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Print & Social Media SubCouncil</title>
+    <script src="https://use.fontawesome.com/47c88f3223.js"></script>
+   
+  </head>
+<body>
+    <div class="hero">
+        
+        <nav class="transparent z-depth-0 " id="navbar">
+            <div class="nav-wrapper">
+              <!-- <a href="#!" class="brand-logo right">Logo</a> -->
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger" id="sidenav">
+                  <i class="material-icons">menu</i>
+                </a>
+              <ul class="left hide-on-med-and-down" id="nav-links">
+                <li ><a href="home.html" class="nav-links">Home</a></li>
+                <li><a href="pulse.html" class="nav-links">Pulse Of HBTU</a></li>
+                <li><a href="team.html" class="nav-links">Team</a></li>
+                <!--  <li><a href="mobile.html">Mobile</a></li> --> 
+              </ul>
+              <ul class="right hide-on-med-and-down " id="nav-links">
+                  <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+              </ul>       
+            </div>
+          </nav>
+       
+          <ul class="sidenav" id="mobile-nav">
+           <ul> 
+             <li>
+              
+                <img src="/images/sidenav.jpg" width="100%" height="auto" >
+              
+             
+              </li>
+            </ul>
+            <li><a class="waves-effect" href="home.html">Home</a></li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="pulse.html">Pulse Of HBTU</a></li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="team.html">Team</a></li>
+          </ul>
+         
+<section>
+    <div class="row">
+        <div class="col s12 m3">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="/images/over-hero.jpg" alt="Avatar" style="width:200px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>President </h1>
+            <p>Print and Social Media Subcouncil </p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+                <div class="front">	
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="/images/over-hero.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+      </div>
+
+</section>
+
+
+
+
+<footer class="page-footer section-follow  grey darken-4 white-text center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4> Print & Social Media Subcouncil</h4>
+          <p>Follow us on social media for trending pulses</p>
+          <a href="#" class="white-text">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fa fa-instagram fa-2x"></i>
+          </a>
+        
+        </div>
+      </div>
+    </div>
+  
+</footer>
+ <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- initilization -->
+    <script>     
+
+
+        //form selector
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sidenav
+            const sideNav = document.querySelector('.sidenav');
+            M.Sidenav.init(sideNav, {});
+          // Slider
+          const slider = document.querySelector('.slider');
+          M.Slider.init(slider, {
+          indicators: false,
+             height: 500,
+             transition: 500,
+            interval: 6000
+              });
+
+
+
+
+            var elems = document.querySelectorAll('select');
+            var options =document.querySelectorAll('option');
+            var instances = M.FormSelect.init(elems, options);
+
+          
+            // var elems_parallax = document.querySelectorAll('.parallax');
+            // var instances_parallax = M.Parallax.init(elems,0);
+  
+
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = 10;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+   navbar.classList.add("sticky","grey","darken-4");
+//    navbar.classList.add("grey darken-4");
+   navbar.classList.remove("transparent");
+  } else {
+    navbar.classList.remove("sticky", "grey", "darken-4");
+    // navbar.classList.remove("grey");
+    navbar.classList.add("transparent");
+
+}
+}
+
+
+          });
+        
+        
+        </script>
+</body>
+</html>
+ <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- initilization -->
+    <script>     
+
+
+        //form selector
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sidenav
+            const sideNav = document.querySelector('.sidenav');
+            M.Sidenav.init(sideNav, {});
+          // Slider
+          const slider = document.querySelector('.slider');
+          M.Slider.init(slider, {
+          indicators: false,
+             height: 500,
+             transition: 500,
+            interval: 6000
+              });
+
+
+
+
+            var elems = document.querySelectorAll('select');
+            var options =document.querySelectorAll('option');
+            var instances = M.FormSelect.init(elems, options);
+
+          
+            // var elems_parallax = document.querySelectorAll('.parallax');
+            // var instances_parallax = M.Parallax.init(elems,0);
+  
+
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = 10;
+
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+   navbar.classList.add("sticky","grey","darken-4");
+//    navbar.classList.add("grey darken-4");
+   navbar.classList.remove("transparent");
+  } else {
+    navbar.classList.remove("sticky", "grey", "darken-4");
+    // navbar.classList.remove("grey");
+    navbar.classList.add("transparent");
+
+}
+}
+
+
+          });
+        
+        
+        </script>>
